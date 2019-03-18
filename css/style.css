@@ -1,0 +1,623 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html,body,header,main,.media{
+	width: 100%;
+	height: 100%;
+	font-family: Roboto;
+}
+.click-nav{
+	width: 100%;
+	height: 360px;
+	background: white;
+	position: fixed;
+}
+.click-nav>ul{
+	padding: 87px 0px 27px 0px;
+	margin-left: 10px;
+}
+nav>ul{
+	display: none;
+}
+.click-nav>ul>li{
+	height: 37px;
+}
+.click-nav>ul>li>a{
+	display: inline-block;
+	width: 95%;
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+	font-size: 16px;
+	float: left;
+}
+.click-nav>ul>li>a:hover{
+	color: #99604C;
+}
+.click-nav>ul>li>i{
+	float: right;
+}
+nav{
+	width: 100%;
+	height: 84px;
+	background-color: transparent;
+	padding: 20px 36px 0px;
+	box-sizing: border-box;
+	box-shadow: 0 4px 10px -10px rgba(0, 0, 0, 0.6);
+	position: fixed;
+	z-index: 5;
+}
+.l-nav{
+	float: left;
+	transition: all 1s;
+}
+.r-nav{
+	float: right;
+}
+.r-nav>ul{
+	height: 48px;
+	margin-top: 12px;
+}
+.r-nav>ul>li{
+	float: left;
+	height: 55px;
+	padding: 0px 31px 0px;
+	position: relative;
+	cursor: pointer;
+}
+.r-nav>ul>li>a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	font-family: Roboto;
+}
+.r-nav>ul>li>a:hover{
+	color: #99604c;
+}
+.r-nav .tab{
+	width: 234px;
+	background: white;
+	position: absolute;
+	left: -20px;
+	top:52px;
+	display: none;
+}
+.r-nav .tab li{
+	width: 198px;
+	height: 49px;
+	margin: 0px 14px 0px;
+	border-bottom: 1px solid #bbb;
+	padding-top: 14px;
+	box-sizing: border-box;
+}
+.r-nav>ul>li:nth-of-type(1){
+	padding-left: 0;
+}
+.r-nav .tab a{
+	text-decoration: none;
+	color: #000;
+	font-weight: 200;
+}
+.r-nav .tab .last{
+	border-bottom: none;
+}
+
+.r-nav>div{
+	display: none;
+	width: 20px;
+	position: relative;
+	left: 17px;
+	top: 16px;
+	cursor: pointer;
+	transition: all 2s;
+}
+.click-btn>span:nth-of-type(1){
+	display: block;
+	width: 18px;
+	height: 2px;
+	background: #000;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 5px;
+}
+.click-btn>span:nth-of-type(2){
+	display: block;
+	width: 18px;
+	height: 2px;
+	background: #000;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 5px;
+}
+.r-nav .button>span{
+	display: block;
+	width: 18px;
+	height: 2px;
+	background: black;
+	margin-bottom: 3px;
+}
+.button>span:nth-of-type(1),.button>span:nth-of-type(2){
+	transform: none;
+	position: static;
+}
+.middle{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+h2{
+	color: white;
+	font-size: 60px;
+	font-weight: 500;
+	transition: all 1s;
+}
+.middle>span{
+	display: inline-block;
+	width: 170px;
+	height: 28px;
+	border-bottom: 2px solid #99604C;
+	margin-top: 30px;
+}
+.main{
+	overflow: hidden;
+}
+.middle>span a{
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+}
+.box{
+	width: 110%;
+	height: 100%;
+	background: #000000;
+}
+.main>.box>a{
+	float: left;
+	width: 23%;
+	height: 100%;
+	overflow: hidden;
+	padding: 36px;	
+	box-sizing: border-box;
+	background-size: cover;
+	background-position-x: -57px;
+	background-repeat: no-repeat;
+	transition: all 0.3s;
+	position: relative;
+}
+.frame1{
+	background: url(../img/01_ff91.jpg);
+}
+.frame2{
+	background: url(../img/test_ourcompany.jpg);
+}
+.frame3{
+	background: url(../img/04_futuresight.jpg);
+}
+.frame4{
+	background: url(../img/ffzero1-slats.jpg);
+}
+.white{
+	color: white;
+}
+.black{
+	color: black;
+}
+.bias{
+	width: 100%;
+	height: 20%;
+	text-align: right;
+}
+.bias img{
+	height: 100%;
+}
+.main>.box>a>p{
+	font-size: 24.3px;
+	font-weight: 400;
+	font-family: Roboto;
+	margin-top: 36px;
+	border-top: 3px solid #99604C;
+	width: 50%;
+	padding-top: 32px;
+	transition: all 0.5s;
+}
+a{
+	text-decoration: none;
+}
+header{
+	background: url(../img/FF-HomePage-Cover.jpg) no-repeat;
+	background-size: cover;
+}
+section{
+	width: 100%;
+	height: 70%;
+	background: url(../img/vr-bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.box2{
+	width: 90%;
+	height: 70%;
+	margin: auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.box2>div{
+	width: 30%;
+	height: 50%;
+	float: left;
+	padding: 72px 18px 72px 72px;
+	box-sizing: border-box;
+}
+.box2 .glasses{
+	width: 70%;
+	height: 100%;
+	float: right;
+	padding: 0px 0px 0px 72px;
+	max-height: 100%;
+}
+.box2 .glasses img{
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+.exp a{
+	display: block;
+	width: 100%;
+	height: 42px;
+	border: 1px solid #99604c;
+	text-align: center;
+	line-height: 42px;
+	background: #99604c;
+	color: white;
+	font-size: 12px;
+	transition: all 0.3s;
+}
+.exp a:hover{
+	color: #99604C;
+	background: transparent;
+}
+.media{
+	background: url(../img/lidar_cover_image.jpg) no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+.media video{
+	width: 102%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+}
+.line{
+	width: 91px;
+	height: 2px;
+    margin-bottom: 20px;
+    background-color: hsl(16, 34%, 45%);
+}
+.m-txt{
+	position: absolute;
+	top: 23%;
+	right: 14%;
+	transition: all 1s;
+}
+.media p{
+	width: 330px;
+	height: 55px;
+	color: white;
+	top: 20%;
+	font-size: 33px;
+	font-weight: 300;
+	margin-bottom: 5px;
+	transition: all 0.5s ease 0s; 
+}
+
+
+@media (max-width:1200px) {
+	.m-txt{
+		position: absolute;
+		top: 23%;
+		right: 10%;
+	}
+}
+
+footer{
+	width: 100%;
+}
+.blog{
+	width: 100%;
+	padding: 36px;
+	box-sizing: border-box;
+}
+.blog-p{
+	float: left;
+	margin-top: 36px;
+}
+.blog-p>p{
+	font-weight: 300;
+	font-family: Sectra;
+	line-height: 57px;
+}
+.blog-p>p:nth-of-type(1){
+	font-size: 15px;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+.blog-p>p:nth-of-type(2){
+	font-size: 60px;
+	font-weight: 300;
+	transition: all 1s;
+}
+.blog-img{
+	float: left;
+	margin-top: 36px;
+}
+.blog-img>img{
+	width: 60%;
+	max-width: 100%;
+}
+.clearfix{
+	clear: both;
+}
+figure{
+	width: 90%;
+	height: 660px;
+	padding: 36px;
+	background: url(../img/art-of-lighting-1.jpg);
+	background-size: 165% 180%;
+	background-position: center center;
+	clip-path: polygon(85% 0, 100% 31%, 100% 99%, 0 100%, 0 0);
+	margin: auto;
+	box-sizing: border-box;
+}
+figure time{
+	width: 60%;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+}
+figure p{
+	width: 60%;
+	font-size: 40px;
+	margin-top: 36px;
+	line-height: 57px;
+	font-weight: 300;
+	margin-bottom: 34%;
+}
+figure article{
+	width: 60%;
+	font-size: 15px;
+	font-weight: 100;
+	line-height: 30px;
+	margin-bottom: 36px;
+}
+figure a{
+	width: 60%;
+	padding-left: 19%;
+	color: hsl(16, 34%, 45%);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	position: relative;
+}
+figure>a>img{
+	position: absolute;
+	top: -11px;
+	right: -26px;
+}
+.test{
+	width: 90%;
+	padding: 36px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row-reverse;
+}
+.box3{
+	width: 60%;
+	padding: 0px 5px 0px;
+	box-sizing: border-box;
+	
+}
+.box3-head{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	letter-spacing: 1.5px;
+	font-size: 15px;
+	margin-bottom: 36px;
+	font-weight: 700;
+}
+.box3-head>img{
+	max-width: 20%;
+	height: auto;
+}
+.box3-middle{
+	width: 100%;
+	margin-bottom: 36px;
+	transition: all 0.5s;
+}
+.box3-middle>img{
+	width: 100%;
+}
+.box3>p:nth-of-type(1){
+	color: #0f1317;
+    font-size: 26px;
+    line-height: 1.4;
+    font-weight: 300;
+    margin-bottom: 36px;
+}
+.box3>p:nth-of-type(2){
+	color: #0f1317;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 30px;
+    margin-bottom: 36px;
+}
+.box3>a{
+	color: hsl(16, 34%, 45%);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+	position: relative;
+}
+.box3>a>img{
+	position: absolute;
+	top: -10px;
+	right: -26px;
+}
+.end{
+	width: 100%;
+	padding: 36px;
+	box-sizing: border-box;
+	background: black;
+	font-weight: 300;
+}
+.end-up{
+	display: flex;
+	margin-bottom: 36px;
+	justify-content: space-between;
+}
+.end-up>a{
+	display: block;
+}
+.end-up-m>a{
+	color: white;
+	margin: 0 10px;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: .1em;
+	transition: all 0.5s;
+}
+.end a:hover{
+	color: #99604C;
+}
+.end-up-r{
+	text-align: center;
+}
+.end-up-r>a{
+	display: inline-block;
+	width: 80px;
+	margin: 0 5px;
+	border: 1px solid transparent;
+	border-bottom: 2px solid transparent;
+}
+.end-down{
+	width: 100%;
+	display: flex;
+	padding-top: 27px;
+	justify-content: space-between;
+}
+.end-down>p{
+	color: white;
+	font-size: 13px;
+	font-weight: 300;
+}
+.end-down>p>a{
+	color: white;
+	transition: all 0.5s;
+}
+.end-down>div>a{
+	margin: 0 10px;
+	position: relative;
+	top: 30%;
+}
+
+
+@media (max-width:1002px) {
+	nav{
+		padding-left: 18px;
+	}
+	.r-nav>ul{
+		display: none;
+	}
+	.r-nav>div{
+		display: block;
+	}
+	.button{
+		display: block;
+	}
+	h2{
+		font-size: 35px;
+	}
+	.main{
+		height: 250%;
+		overflow:visible;
+	}
+	.box{
+		width: 100%;
+		height: 100%;
+	}
+	.main>.box>a{
+		width: 100% !important;
+		height: 25%;
+		transform: none;
+		background-position-x: 0px;
+		background-position: bottom;
+	}
+	.box2>div{
+		float: none;
+		height: 20%;
+	}
+	.box2 .vr{
+		padding: 18px 0;
+	}
+	.box2 .exp{
+		width: 100%;
+		padding-top: 18px;
+	}
+	.box2 .glasses{
+		width: 100%;
+		height: 60%;
+		float: none;
+	}
+	.media p{
+		font-size: 23px;
+	}
+	.m-txt{
+		position: absolute;
+		top: 23%;
+		right: -3%;
+	}
+	.blog-p>p:nth-of-type(2){
+		font-size: 40px;
+	}
+	figure{
+		width: 100%;
+		clip-path: none;
+		background-size: cover;
+	}
+	.test{
+		display: block;
+		width: 100%;
+	}
+	.box3{
+		width: 100%;
+	}
+	.end-up{
+		display: block;
+		text-align: center;
+	}
+	.end-up>div{
+		padding-top: 36px;
+	}
+	.end-down{
+		display: block;
+	}
+	.end-down>p{
+		text-align: center;
+		padding-bottom: 27px;
+	}
+	.end-down>p>a{
+		display: block;
+		margin-top: 10px;
+	}
+	.end-down>div{
+		text-align: center;
+	}
+}

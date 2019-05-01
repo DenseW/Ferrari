@@ -171,7 +171,7 @@ header div p:nth-of-type(2){
 	font-size: 60px;
 	font-family: Sectra;
 }
-body .down-nav{
+ .down-nav{
 	width: 100%;
 	height: 132px;
 	padding: 36px;
@@ -1144,9 +1144,6 @@ body .down-nav{
 	.button{
 		display: block;
 	}
-	.down-nav{
-		display: none;
-	}
 	.sec1>div{
 		width: 100%;
 	}
@@ -1193,6 +1190,14 @@ body .down-nav{
 	}
 	.sec6-txt{
 		display: none;
+	}
+	.up-sec7{
+		display: block;
+		height: 35%;
+	}
+	.up-sec7>div{
+		width: 100%;
+		height: 50%;
 	}
 	.sec8-txt{
 		display: block;

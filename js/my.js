@@ -60,11 +60,11 @@ function big(){
 		$(this).children('p').css('width','50%');
 	})
 }
+big();
 // 一些图片的消失和显示
 $(window).resize(function(){
 	var wid=$(window).width();
 	if(wid>=1002){
-		big();
 		$('.bias').children(0).show();
 		$('.blog-img').children(0).show();
 		$('.box3-head').children(0).show();

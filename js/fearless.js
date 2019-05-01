@@ -50,15 +50,21 @@ $('.r-nav>div').click(function(){
 })
 //下导航栏消失
 $(window).scroll(function(){
-	var top=$(window).scrollTop();
-	
-	console.log(top)
-	if(top>10040){
+	var top=$('.down-nav').offset().top;
+	var ntop=$('.end').offset().top;
+	if(top>ntop){
+		$('.down-nav').css('z-index','-5');
+	}else{
+		$('.down-nav').css('z-index','50');
+	}
+})
+$(window).resize(()=>{
+	var wwid=$(window).width();
+	if(wwid<1000){
 		$('.down-nav').hide();
 	}else{
 		$('.down-nav').show();
 	}
-	
 })
 //中间图片变灰色
 function add(a){
